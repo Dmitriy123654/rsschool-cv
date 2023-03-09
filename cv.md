@@ -50,7 +50,7 @@ I am currently studying ASP.NET and I'm starting to conquer the JS course, and I
 
 # Code example:
 
-## Part of an example of creating a database in C# using Entity Framework
+### Part of an example of creating a database in C# using Entity Framework
 
 ```
 namespace WarehouseInformationSystem.Data
