@@ -97,6 +97,13 @@ namespace WarehouseInformationSystem.Data
 
 ---
 
+# Education
+
+- 2nd year student at the Belarusian State University of Informatics and Radioelectronics, Faculty of Information Technology and Management, specialisation Automated Information Processing Systems
+- in the future..
+
+---
+
 # Languages:
 
 - Russian - Native
