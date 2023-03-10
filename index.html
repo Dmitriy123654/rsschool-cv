@@ -15,14 +15,12 @@
 <body>
     <h1><a href="https://app.rs.school/">rsschool-cv</a></h1>
     <hr>
-    <h1>Dmitriy Ermak</h1> 
+    <h1>Dmitriy Ermak</h1>
     <h2>C# Backend Developer</h2>
     <hr>
-
-    <h2>Contact Information</h2> 
-
+    <h2>Contact Information</h2>
     <div>
-        <h4>Phone: +375336896267</h4> 
+        <h4>Phone: +375336896267</h4>
         <h4>E-mail: dimaermak06@gmail.com</h4>
         <h4>Telegram: <a href="https://t.me/ermaakkk" title="нажмиии">@ermaakkk</a><h4>
         <h4>LinkedIn: <a href="https://www.linkedin.com/in/ermakdmitriy/" title="всегда рад новым знакомствам">Ermak Dmitriy</a> <h4>
@@ -31,20 +29,16 @@
         <h4>Discord: <a href="https://discordapp.com/users/483217744821485579/" title="клик">Dima#8566</a> <h4>
         <hr>    
     </div>
-
     <h2>About Myself:</h2>
-
     <div>
-        <p>Currently, I am a second-year student of the Belarusian State University of Informatics and Radioelectronics, 
+        <p>Currently, I am a second-year student of the Belarusian State University of Informatics and Radioelectronics,
             studying at the Faculty of Information Technology and Management in the specialty "Automated Information processing systems".</p>
         <p>I am an inquisitive person who always strives to learn and accept new challenges. In my free time from studies and courses, I do sports.</p>
         <p>I am already familiar with such things as: C#, Entity Framework, MSSQL, MySQL, Razor Pages, network programming, Git; Аt a basic level I know HTML, CSS, ASP.NET , C++ .</p>
         <p>I am currently studying ASP.NET and I'm starting to conquer the JS course, and I'm also working on improving my English language skills.</p>
         <hr>
     </div>
-
     <h2>Skills and Proficiency:</h2>
-
     <div>
         <ul style="list-style-type:disc;">
             <li>MySQL,MSSQL</li>
@@ -62,7 +56,6 @@
         <hr>
     </div>
     <h2>Code example:</h2>
-    
     <p>Part of an example of creating a database in C# using Entity Framework</p>
     <hr>
     <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(34, 34, 34); color: rgb(170, 170, 170);"><span class="hljs-keyword" style="color: rgb(102, 68, 170);">namespace</span> WarehouseInformationSystem.Data
@@ -93,39 +86,33 @@
             <span class="hljs-keyword" style="color: rgb(102, 68, 170);">public</span> <span class="hljs-class"><span class="hljs-keyword" style="color: rgb(102, 68, 170);">class</span> <span class="hljs-title" style="color: rgb(187, 17, 102);">SampleContextFactory</span> : <span class="hljs-title" style="color: rgb(187, 17, 102);">IDesignTimeDbContextFactory</span>&lt;<span class="hljs-title" style="color: rgb(187, 17, 102);">ApplicationDbContext</span>&gt;
             </span>{
                 <span class="hljs-keyword" style="color: rgb(102, 68, 170);">public</span> ApplicationDbContext CreateDbContext(string[] args)
-                {
                     <span class="hljs-keyword" style="color: rgb(102, 68, 170);">var</span> optionsBuilder = <span class="hljs-keyword" style="color: rgb(102, 68, 170);">new</span> DbContextOptionsBuilder&lt;ApplicationDbContext&gt;();
-     
                     <span class="hljs-keyword" style="color: rgb(102, 68, 170);">var</span> builder = WebApplication.CreateBuilder();
                     string connectionString = builder.Configuration.GetConnectionString(<span class="hljs-string" style="color: rgb(255, 204, 51);">"DefaultConnection"</span>);
                     <span class="hljs-keyword" style="color: rgb(102, 68, 170);">var</span> app = builder.Build();
-     
                     optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
                     <span class="hljs-keyword" style="color: rgb(102, 68, 170);">return</span> <span class="hljs-keyword" style="color: rgb(102, 68, 170);">new</span> ApplicationDbContext(optionsBuilder.Options);
                 }
             }
         }</pre>
     <hr>
-
     <h2>Education</h2>
     <div>
         <ul style="list-style-type:disc;">
-            <li>2nd year student at the Belarusian State University of Informatics and Radioelectronics, Faculty of Information Technology and Management, specialisation Automated Information Processing Systems</li>
+            <li>2nd year student at the Belarusian State University of Informatics and Radioelectronics, Faculty of Information Technology and Management,
+                specialisation Automated Information Processing Systems</li>
             <li>in the future..</li>
         </ul>
         <hr>
     </div>
-   
-
     <h2>Languages:</h2>
     <div>
         <ul  style="list-style-type:disc;">
             <li> Russian - Native</li>
-            <li>Belarusian - Native</li> 
+            <li>Belarusian - Native</li>
             <li>English - Elementary</li>
         </ul>
         <hr>
     </div>
-    
 </body>
 </html>
