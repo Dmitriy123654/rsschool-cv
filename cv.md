@@ -2,7 +2,7 @@
 
 # Ermak Dmitriy
 
-## C# Backend Developer
+## .NET Backend Developer / Trainee
 
 ---
 
@@ -30,7 +30,7 @@ I am an inquisitive person who always strives to learn and accept new challenges
 
 I am already familiar with such things as: C#, Entity Framework, MSSQL, MySQL, Razor Pages, network programming, Git; Аt a basic level I know HTML, CSS, ASP.NET , C++ .
 
-I am currently studying ASP.NET and I'm starting to conquer the JS course, and I'm also working on improving my English language skills.
+I am currently studying ASP.NET, and I'm also working on improving my English language skills.
 
 ---
 
@@ -48,58 +48,11 @@ I am currently studying ASP.NET and I'm starting to conquer the JS course, and I
 
 ---
 
-# Code example:
-
-### Part of an example of creating a database in C# using Entity Framework
-
-```
-namespace WarehouseInformationSystem.Data
-{
-    public class ApplicationDbContext : DbContext
-    {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-            : base(options)
-        { }
-        public DbSet<Address> Addresses { get; set; } = null!;
-        public DbSet<CategoryOfProduct> CategoryOfProducts { get; set; } = null!;
-        public DbSet<Product> Products { get; set; } = null!;
-        public DbSet<Location> Locations { get; set; } = null!;
-        public DbSet<User> Users { get; set; } = null!;
-        public DbSet<Employee> Employees { get; set; } = null!;
-        public DbSet<Department> Departments { get; set; } = null!;
-        public DbSet<Post> Posts { get; set; } = null!;
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Employee>().Property(p => p.Salary)
-                .HasPrecision(20, 2);
-            modelBuilder.Entity<Product>().Property(p => p.SalePrice)
-                .HasPrecision(20, 2);
-            modelBuilder.Entity<Product>().Property(p => p.PurchasePrice)
-                .HasPrecision(20, 2);
-        }
-    }
-    public class SampleContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
-    {
-        public ApplicationDbContext CreateDbContext(string[] args)
-        {
-            var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
-
-            var builder = WebApplication.CreateBuilder();
-            string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-            var app = builder.Build();
-
-            optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
-            return new ApplicationDbContext(optionsBuilder.Options);
-        }
-    }
-}
-```
-
 ---
 
 # Education
 
-- 2nd year student at the Belarusian State University of Informatics and Radioelectronics, Faculty of Information Technology and Management, specialisation Automated Information Processing Systems
+- Transferred to the 3rd year at the Belarusian State University of Informatics and Radioelectronics, Faculty of Information Technology and Management, specialization Automated information processing systems
 - in the future..
 
 ---
@@ -108,6 +61,6 @@ namespace WarehouseInformationSystem.Data
 
 - Russian - Native
 - Belarusian - Native
-- English - Elementary
+- English - A2
 
 ---
